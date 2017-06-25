@@ -31,7 +31,7 @@ def image_callback(msg):
         print(e)
     else:
         depth_array = np.array(cv2_img, dtype=np.float32)
-        cv2.normalize(depth_array, depth_array, 0, 1, cv2.NORM_MINMAX)
+        cv2.normalize(depth_array, alpha=0, beta=1, norm_type=cv2.NORM_MINMAX, dtype=cv2.CV_32F)
         cv2.imwrite("depth.png", depth_array*255)
         print msg.encoding
  
