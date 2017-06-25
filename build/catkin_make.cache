@@ -1,0 +1,2 @@
+vision
+-DCATKIN_DEVEL_PREFIX=/home/feliperfranca/james_ws/devel -DCMAKE_INSTALL_PREFIX=/home/feliperfranca/james_ws/install -G Unix Makefiles
